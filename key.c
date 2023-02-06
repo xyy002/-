@@ -4,7 +4,7 @@
 
 #include "key.h"
 
-unsigned char KeyNum;
+unsigned char KeyNum,KeyType;
 
 unsigned char ReadIndependentKey()  //独立按键扫描
 {
@@ -39,6 +39,24 @@ unsigned char ReadIndependentKey()  //独立按键扫描
         }
     }
     return (dat);
+}
+
+void DoIndependentKey()
+{
+    KeyType = ReadIndependentKey();
+    if(KeyType == 0)return;
+    switch(KeyType)
+    {
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+    }
+
 }
 
 void ReadMatrixKey() //矩阵按键扫描

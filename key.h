@@ -18,7 +18,9 @@ sbit l2 = P3^5;
 sbit l3 = P4^2;
 sbit l4 = P4^4;
 
-unsigned char ReadIndependentKey();  //独立按键扫描
+extern unsigned char KeyNum,KeyType;
+extern unsigned char ReadIndependentKey();  //独立按键扫描
+void DoIndependentKey(); //独立按键工作
 void ReadMatrixKey(); //矩阵按键扫描
 
 #endif //LED_KEY_H

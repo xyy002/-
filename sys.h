@@ -6,5 +6,10 @@
 #define LED_SYS_H
 
 
+extern unsigned char Time500us,Time10ms,Time100ms,Time1s,Time1m;
+extern unsigned char Time1usFlg,Time10msFlg,Time100msFlg,Time1sFlg,Time1mFlg;
+
+void TimerExc();
+void Timer0Init();
 
 #endif //LED_SYS_H
